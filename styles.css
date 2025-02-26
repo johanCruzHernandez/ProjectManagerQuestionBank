@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
     padding: 15px;
     background-color: #f4f4f9;
 }
@@ -17,6 +18,7 @@ ol {
 }
 
 li {
+    margin-left: 10px;
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.5;
