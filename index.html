@@ -1,129 +1,145 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victors Home Solutions Project Manager Question Bank</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-<ol>
-    <!-- Question 1 -->
-    <li id="question1">
-        <span class="status"></span>
-        This is a prefabricated metal flashing intended for instalation along the eaves and rake edges of all roof decks.
-    </li>
-    <ul id="q1">
-        <li><input type="checkbox"> Vented Drip Edge</li>
-        <li><input type="checkbox">Drip Edge</li>
-        <li><input type="checkbox">Pipe Flashing</li>
-        <li><input type="checkbox">Step Cards</li>
-    </ul>
-    <button data-question="1" data-answers='["Drip Edge"]'>Submit</button>
 
-    <!-- Question 2 -->
-    <li id="question2">
-        <span class="status"></span>
-        Which of the following is primarily used for Intake Ventilation? <em>(select all that apply).</em>
-    </li>
-    <ul id="q2">
-        <li><input type="checkbox">Vented Edge</li>
-        <li><input type="checkbox">Box Vents</li>
-        <li><input type="checkbox">Deck Air</li>
-        <li><input type="checkbox">Ridge Vent</li>
-    </ul>
-    <button data-question="2" data-answers='["Vented Edge", "Deck Air"]'>Submit</button>
+    <div class="container">
+        <!-- Question 1 -->
+        <div class="question-card" id="question1">
+            <span class="status"></span><span class="status-text"></span><span class="status-text"></span>
+            <p>This is a prefabricated metal flashing intended for installation along the eaves and rake edges of all roof decks.</p>
+            <ul>
+                <li><input type="checkbox"> Vented Drip Edge</li>
+                <li><input type="checkbox"> Drip Edge</li>
+                <li><input type="checkbox"> Pipe Flashing</li>
+                <li><input type="checkbox"> Step Cards</li>
+            </ul>
+            <button data-question="1" data-answers='["Drip Edge"]'>Submit</button>
+        </div>
 
-    <!-- Question 3 -->
-    <li id="question3">
-        <span class="status"></span>
-        Which of the following products is used to exhaust an attic space?</li>
-    <ul id="q3">
-        <li><input type="checkbox">Solar Fan</li>
-        <li><input type="checkbox">Deck Air</li>
-        <li><input type="checkbox">Vented Drop Edge</li>
-        <li><input type="checkbox">Ridge Vent</li>
-        <li><input type="checkbox">Box Vents/750s</li>
-    </ul>
-    <button data-question="3" data-answers='["Ridge Vent", "Box Vents/750s"]'>Submit</button>
+        <!-- Question 2 -->
+        <div class="question-card" id="question2">
+            <span class="status"></span><span class="status-text"></span>
+            <p>Which of the following is primarily used for Intake Ventilation? <em>(select all that apply).</em></p>
+            <ul>
+                <li><input type="checkbox"> Vented Edge</li>
+                <li><input type="checkbox"> Box Vents</li>
+                <li><input type="checkbox"> Deck Air</li>
+                <li><input type="checkbox"> Ridge Vent</li>
+            </ul>
+            <button data-question="2" data-answers='["Vented Edge", "Deck Air"]'>Submit</button>
+        </div>
 
-    <!-- Question 4 -->
-    <li id="question4">
-        <span class="status"></span>
-        If we are venting a cathedral ceiling without a ridge, what would be the best product option for intake and exhaust?
-    </li>
-    <ul id="q4">
-        <li><input type="checkbox">Deck Air and Deck Air</li>
-        <li><input type="checkbox">Vented Edge and Box Vents</li>
-        <li><input type="checkbox">Vented Edge and Solar Fan</li>
-    </ul>
-    <button data-question="4" data-answers='["Deck Air and Deck Air"]'>Submit</button>
+        <!-- Question 3 -->
+        <div class="question-card" id="question3">
+            <span class="status"></span><span class="status-text"></span>
+            <p>Which of the following products is used to exhaust an attic space?</p>
+            <ul>
+                <li><input type="checkbox"> Solar Fan</li>
+                <li><input type="checkbox"> Deck Air</li>
+                <li><input type="checkbox"> Vented Drop Edge</li>
+                <li><input type="checkbox"> Ridge Vent</li>
+                <li><input type="checkbox"> Box Vents/750s</li>
+            </ul>
+            <button data-question="3" data-answers='["Ridge Vent", "Box Vents/750s"]'>Submit</button>
+        </div>
 
-    <!-- Question 5 -->
-    <li id="question5">
-        <span class="status"></span>
-        Select all of the areas that we would install Step Cards.</li>
-    <ul id="q5">
-        <li><input type="checkbox">Dormer</li>
-        <li><input type="checkbox">Wall</li>
-        <li><input type="checkbox">Chimney</li>
-        <li><input type="checkbox">Skylight</li>
-    </ul>
-    <button data-question="5" data-answers='["Dormer", "Wall", "Chimney", "Skylight"]'>Submit</button>
+        <!-- Question 4 -->
+        <div class="question-card" id="question4">
+            <span class="status"></span><span class="status-text"></span>
+            <p>If we are venting a cathedral ceiling without a ridge, what would be the best product option for intake and exhaust?</p>
+            <ul>
+                <li><input type="checkbox"> Deck Air and Deck Air</li>
+                <li><input type="checkbox"> Vented Edge and Box Vents</li>
+                <li><input type="checkbox"> Vented Edge and Solar Fan</li>
+            </ul>
+            <button data-question="4" data-answers='["Deck Air and Deck Air"]'>Submit</button>
+        </div>
 
-    <!-- Question 6 -->
-    <li id="question6">
-        <span class="status"></span>
-        Which of the following types of skylight comes with its own flashing kit from the manufacturer?
-    </li>
-    <ul id="q6">
-        <li><input type="checkbox">Deck Moutn Skylight</li>
-        <li><input type="checkbox">Power Opening Curb Mount Skylight</li>
-        <li><input type="checkbox">Curb Mount Skylight</li>
-        <li><input type="checkbox">Manual Opening Deck Mount Skylight</li>
-    </ul>
-    <button data-question="6" data-answers='["Manual Opening Deck Mount Skylight"]'>Submit</button>
+        <!-- Question 5 -->
+        <div class="question-card" id="question5">
+            <span class="status"></span><span class="status-text"></span>
+            <p>Select all of the areas that we would install Step Cards.</p>
+            <ul>
+                <li><input type="checkbox"> Dormer</li>
+                <li><input type="checkbox"> Wall</li>
+                <li><input type="checkbox"> Chimney</li>
+                <li><input type="checkbox"> Skylight</li>
+            </ul>
+            <button data-question="5" data-answers='["Dormer", "Wall", "Chimney", "Skylight"]'>Submit</button>
+        </div>
 
-    <!-- Question 7 -->
-    <li id="question7">
-        <span class="status"></span>
-        What are the color options that we warehouse for coil metal?
-    </li>
-    <ul id="q7">
-        <li><input type="checkbox">Wicker</li>
-        <li><input type="checkbox">Black</li>
-        <li><input type="checkbox">White</li>
-        <li><input type="checkbox">Almond</li>
-        <li><input type="checkbox">Terra</li>
-    </ul>
-    <button data-question="7" data-answers='["Black", "White", "Terra"]'>Submit</button>
+        <!-- Question 6 -->
+        <div class="question-card" id="question6">
+            <span class="status"></span><span class="status-text"></span>
+            <p>Which of the following types of skylight comes with its own flashing kit from the manufacturer?</p>
+            <ul>
+                <li><input type="checkbox"> Deck Mount Skylight</li>
+                <li><input type="checkbox"> Power Opening Curb Mount Skylight</li>
+                <li><input type="checkbox"> Curb Mount Skylight</li>
+                <li><input type="checkbox"> Manual Opening Deck Mount Skylight</li>
+            </ul>
+            <button data-question="6" data-answers='["Manual Opening Deck Mount Skylight"]'>Submit</button>
+        </div>
 
-    <!-- Question 8 -->
-    <li id="question8">
-        <span class="status"></span>
-        Which of the following are roof decking options that we warehouse?
-    </li>
-    <ul id="q8">
-        <li><input type="checkbox">1x8 Roof Boards</li>
-        <li><input type="checkbox">1x6 Roof Boards</li>
-        <li><input type="checkbox">7/16" OSB</li>
-        <li><input type="checkbox">5/8" Plywood</li>
-        <li><input type="checkbox">1/2" OSB</li>
-    </ul>
-    <button data-question="8" data-answers='["1x6 Roof Boards", "7/16\" OSB"]'>Submit</button>
+        <!-- Question 7 -->
+        <div class="question-card" id="question7">
+            <span class="status"></span><span class="status-text"></span>
+            <p>What are the color options that we warehouse for coil metal?</p>
+            <ul>
+                <li><input type="checkbox"> Wicker</li>
+                <li><input type="checkbox"> Black</li>
+                <li><input type="checkbox"> White</li>
+                <li><input type="checkbox"> Almond</li>
+                <li><input type="checkbox"> Terra</li>
+            </ul>
+            <button data-question="7" data-answers='["Black", "White", "Terra"]'>Submit</button>
+        </div>
 
+        <!-- Question 8 -->
+        <div class="question-card" id="question8">
+            <span class="status"></span><span class="status-text"></span>
+            <p>Which of the following are roof decking options that we warehouse?</p>
+            <ul>
+                <li><input type="checkbox"> 1x8 Roof Boards</li>
+                <li><input type="checkbox"> 1x6 Roof Boards</li>
+                <li><input type="checkbox"> 7/16" OSB</li>
+                <li><input type="checkbox"> 5/8" Plywood</li>
+                <li><input type="checkbox"> 1/2" OSB</li>
+            </ul>
+            <button data-question="8" data-answers='["1x6 Roof Boards", "7/16\" OSB"]'>Submit</button>
+        </div>
 
-    <!-- Question 9 -->
-    <li id="question9">
-        <span class="status"></span>
-        What is the only material that we can not pick up from the vendor?
-    </li>
-    <ul id="q9">
-        <li><input type="checkbox">Flintlastic</li>
-        <li><input type="checkbox">Grace Ice and Water Shield</li>
-        <li><input type="checkbox">Cool Deck</li>
-        <li><input type="checkbox">Cap Shingles</li>
-    </ul>
-    <button data-question="9" data-answers='["Cool Deck"]'>Submit</button>
-</ol>
+        <!-- Question 9 -->
+        <div class="question-card" id="question9">
+            <span class="status"></span><span class="status-text"></span>
+            <p>What is the only material that we cannot pick up from the vendor?</p>
+            <ul>
+                <li><input type="checkbox"> Flintlastic</li>
+                <li><input type="checkbox"> Grace Ice and Water Shield</li>
+                <li><input type="checkbox"> Cool Deck</li>
+                <li><input type="checkbox"> Cap Shingles</li>
+            </ul>
+            <button data-question="9" data-answers='["Cool Deck"]'>Submit</button>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-card" id="question10">
+            <span class="status"></span><span class="status-text"></span>
+            <p>What shingle type could be used in our Ultimate Package?</p>
+            <ul>
+                <li><input type="checkbox"> Atlas Pinnacle Pristine</li>
+                <li><input type="checkbox"> Atlas StormMaster Shake</li>
+            </ul>
+            <button data-question="10" data-answers='["Atlas StormMaster Shake"]'>Submit</button>
+        </div>
+    </div>
+
 </body>
-
 </html>

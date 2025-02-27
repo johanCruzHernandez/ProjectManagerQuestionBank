@@ -1,121 +1,129 @@
-/* General resets for mobile responsiveness */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 15px;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Style the list of questions and answers */
-ol {
-    padding-left: 20px;
+/* Container */
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
 }
 
-li {
-    margin-left: 10px;
+/* Card Styling */
+.question-card {
+    background: #ffffff;
+    padding: 20px;
     margin-bottom: 15px;
-    font-size: 32px;
-    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
 }
 
-ul {
+.question-card:hover {
+    transform: scale(1.02);
+}
+
+/* Question Text */
+.question-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Answer List */
+.question-card ul {
     list-style-type: none;
-    padding-left: 0;
-    margin-top: 10px;
+    padding: 0;
 }
 
-/* Style for checkboxes and labels */
-ul li {
+.question-card ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    padding: 5px 0;
 }
 
-input[type="checkbox"] {
+.question-card ul li input {
     margin-right: 10px;
 }
 
+/* Buttons */
 button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    font-size: 14px;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background: #0056b3;
 }
 
-/* Styling for feedback on the answers */
-.correct {
-    background-color: lightgreen;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.incorrect {
-    background-color: lightcoral;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
+/* Status Indicator (for correctness feedback) */
 .status {
-    margin-right: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: gray; /* Default state */
 }
 
-/* Mobile-specific styling */
-@media (max-width: 1000px) {
-    body {
-        padding: 10px;
+.correct .status {
+    background: green;
+}
+
+.incorrect .status {
+    background: red;
+}
+
+.status-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #333; /* Default text color */
+}
+
+.correct .status-text {
+    color: green;
+}
+
+.incorrect .status-text {
+    color: red;
+}
+
+.some-correct .status {
+    background: orange;
+}
+
+.some-correct .status-text {
+    color: orange;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
     }
 
-    li {
-        font-size: 32px;
-        margin-bottom: 10px;
+    .question-card {
+        padding: 15px;
     }
 
     button {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-
-    .correct, .incorrect {
-        font-size: 16px;
-        padding: 2px 5px;
-    }
-
-    /* Style the question titles to make them more prominent */
-    li span {
-        font-weight: bold;
-        font-size: 18px;
-        margin-right: 8px;
-    }
-}
-
-/* Large devices styling */
-@media (min-width: 601px) {
-    button {
-        width: auto;
-    }
-
-    .correct, .incorrect {
-        font-size: 18px;
+        width: 100%;
     }
 }
