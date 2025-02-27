@@ -20,7 +20,7 @@ ol {
 li {
     margin-left: 10px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 32px;
     line-height: 1.5;
 }
 
@@ -51,6 +51,7 @@ button {
     font-size: 16px;
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -80,7 +81,7 @@ button:hover {
 }
 
 /* Mobile-specific styling */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     body {
         padding: 10px;
     }
@@ -91,7 +92,7 @@ button:hover {
     }
 
     button {
-        font-size: 14px;
+        font-size: 16px;
         padding: 8px 15px;
     }
 
